@@ -1,147 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Your Name | CV</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nirmal Ahir | Senior Mobile Developer</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f6f9;
-            color: #333;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        header {
-            background: #1e293b;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+}
 
-        header p {
-            margin-top: 10px;
-            font-size: 18px;
-            color: #cbd5e1;
-        }
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    animation: fadeDown 1s ease forwards;
+}
 
-        section {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
+header p {
+    font-size: 20px;
+    color: #94a3b8;
+    animation: fadeUp 1.2s ease forwards;
+}
 
-        h2 {
-            border-bottom: 2px solid #1e293b;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
 
-        .skills span {
-            display: inline-block;
-            background: #1e293b;
-            color: white;
-            padding: 8px 12px;
-            margin: 5px;
-            border-radius: 20px;
-            font-size: 14px;
-        }
+.btn:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
 
-        .project {
-            margin-bottom: 15px;
-        }
+section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1e293b;
-            color: white;
-            margin-top: 40px;
-        }
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    border-left: 4px solid #2563eb;
+    padding-left: 10px;
+}
 
-        a {
-            color: #2563eb;
-            text-decoration: none;
-        }
+.skills span {
+    display: inline-block;
+    background: #1e293b;
+    padding: 10px 18px;
+    margin: 8px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+.skills span:hover {
+    background: #2563eb;
+    transform: translateY(-5px);
+}
 
-        @media(max-width: 600px){
-            header h1 {
-                font-size: 26px;
-            }
-        }
-    </style>
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.4s;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.project-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    background: #2563eb;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+    background: #1e293b;
+    color: #94a3b8;
+}
+
+/* Animations */
+@keyframes fadeDown {
+    from {opacity: 0; transform: translateY(-30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeUp {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Your Name</h1>
-    <p>iOS Developer | Flutter Developer | Software Engineer</p>
-    <p>Email: your@email.com | Phone: +91 XXXXX XXXXX</p>
-    <p>
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-    </p>
+    <h1>Nirmal Ahir</h1>
+    <p>Senior Mobile Application Developer</p>
+    <p>Swift • Flutter • Firebase • REST API • GitHub</p>
+    <a href="#" class="btn">Download Resume</a>
 </header>
 
 <section>
     <h2>About Me</h2>
     <p>
-        Passionate developer with experience in building mobile applications 
-        using Flutter and Swift. I love creating clean UI and efficient backend logic.
+        Senior Mobile Developer with strong experience in building scalable 
+        Flutter and iOS applications. Skilled in Firebase integration, 
+        REST API development, push notifications, and performance optimization.
+        Passionate about clean architecture and smooth UI/UX experiences.
     </p>
 </section>
 
 <section>
-    <h2>Skills</h2>
+    <h2>Technical Skills</h2>
     <div class="skills">
-        <span>Flutter</span>
         <span>Swift</span>
+        <span>CocoaPods</span>
         <span>Firebase</span>
         <span>REST API</span>
-        <span>Git</span>
-        <span>UI/UX</span>
+        <span>Flutter</span>
+        <span>GitHub</span>
     </div>
 </section>
 
 <section>
-    <h2>Projects</h2>
+    <h2>iOS Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Relief Driver</h3>
+            <p>iOS app built with Swift and REST APIs focused on performance and reliability.</p>
+        </div>
 
-    <div class="project">
-        <h3>Chat Application</h3>
-        <p>Built a real-time chat app using Flutter and Firebase.</p>
+        <div class="project-card">
+            <h3>QPark</h3>
+            <p>Smart parking solution with backend integration and real-time updates.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Tradie Tracer</h3>
+            <p>Service tracking application with Firebase and push notification support.</p>
+        </div>
     </div>
-
-    <div class="project">
-        <h3>Matrimonial App</h3>
-        <p>Developed a filter-based matchmaking app without AI.</p>
-    </div>
-
 </section>
 
 <section>
-    <h2>Education</h2>
-    <p><strong>Bachelor of Engineering</strong><br>
-    Your College Name<br>
-    Year of Completion</p>
+    <h2>Flutter Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>MateInvest</h3>
+            <p>Investment management mobile app with clean UI and API integrations.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>LifeOfMe</h3>
+            <p>Personal growth and activity tracking application using Flutter & Firebase.</p>
+        </div>
+    </div>
 </section>
 
 <footer>
-    © 2026 Your Name | All Rights Reserved
+    © 2026 Nirmal Ahir | Senior Mobile Developer
 </footer>
+
+<script>
+// Scroll animation
+const cards = document.querySelectorAll('.project-card');
+
+window.addEventListener('scroll', () => {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+
+        if(cardTop < triggerBottom){
+            card.classList.add('show');
+        }
+    });
+});
+</script>
 
 </body>
 </html>
