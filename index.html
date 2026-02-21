@@ -3,126 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nirmal Ahir | Senior Mobile Developer</title>
+<title>Nirmal Ahir | Senior iOS & Flutter Developer</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:'Segoe UI',sans-serif;
+background:#0f172a;
+color:#e2e8f0;
+line-height:1.6;
+scroll-behavior:smooth;
+}
+header{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(135deg,#1e293b,#0f172a);
+}
+header h1{font-size:48px;margin-bottom:10px;}
+header p{color:#94a3b8;font-size:18px;margin:5px 0;}
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:30px;
+transition:0.3s;
+}
+.btn:hover{background:#1d4ed8;transform:scale(1.05);}
+section{max-width:1100px;margin:60px auto;padding:0 20px;}
+h2{font-size:30px;margin-bottom:25px;border-left:4px solid #2563eb;padding-left:10px;}
+.skills span{
+display:inline-block;
+background:#1e293b;
+padding:10px 18px;
+margin:8px;
+border-radius:30px;
+transition:0.3s;
+}
+.skills span:hover{background:#2563eb;transform:translateY(-5px);}
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+transition:0.4s;
+opacity:0;
+transform:translateY(40px);
+}
+.card ul {
+    margin-top:10px;
+    padding-left:18px;
+    color:#cbd5e1;
+    font-size:14px;
 }
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: #e2e8f0;
-    line-height: 1.6;
-    scroll-behavior: smooth;
+.card ul li {
+    margin-bottom:6px;
 }
-
-header {
-    text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #1e293b, #0f172a);
-}
-
-header h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-    animation: fadeDown 1s ease forwards;
-}
-
-header p {
-    font-size: 20px;
-    color: #94a3b8;
-    animation: fadeUp 1.2s ease forwards;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #2563eb;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #1d4ed8;
-    transform: scale(1.05);
-}
-
-section {
-    max-width: 1100px;
-    margin: 60px auto;
-    padding: 0 20px;
-}
-
-h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-    border-left: 4px solid #2563eb;
-    padding-left: 10px;
-}
-
-.skills span {
-    display: inline-block;
-    background: #1e293b;
-    padding: 10px 18px;
-    margin: 8px;
-    border-radius: 30px;
-    transition: 0.3s;
-}
-
-.skills span:hover {
-    background: #2563eb;
-    transform: translateY(-5px);
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-.project-card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 15px;
-    transition: 0.4s;
-    opacity: 0;
-    transform: translateY(40px);
-}
-
-.project-card.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    background: #2563eb;
-}
-
-footer {
-    text-align: center;
-    padding: 30px;
-    margin-top: 60px;
-    background: #1e293b;
-    color: #94a3b8;
-}
-
-/* Animations */
-@keyframes fadeDown {
-    from {opacity: 0; transform: translateY(-30px);}
-    to {opacity: 1; transform: translateY(0);}
-}
-
-@keyframes fadeUp {
-    from {opacity: 0; transform: translateY(30px);}
-    to {opacity: 1; transform: translateY(0);}
+.card.show{opacity:1;transform:translateY(0);}
+.card:hover{background:#2563eb;transform:translateY(-8px);}
+.timeline div{margin-bottom:20px;}
+footer{
+text-align:center;
+padding:30px;
+margin-top:60px;
+background:#1e293b;
+color:#94a3b8;
 }
 </style>
 </head>
@@ -130,87 +82,147 @@ footer {
 <body>
 
 <header>
-    <h1>Nirmal Ahir</h1>
-    <p>Senior Mobile Application Developer</p>
-    <p>Swift • Flutter • Firebase • REST API • GitHub</p>
-    <a href="#" class="btn">Download Resume</a>
+<h1>Nirmal Ahir</h1>
+<p>Senior iOS & Flutter Developer | 5+ Years Experience</p>
+<p>Swift • UIKit • SwiftUI • Flutter • Firebase • REST APIs</p>
+<a href="mailto:jems00711@gmail.com" class="btn">Contact Me</a>
 </header>
 
 <section>
-    <h2>About Me</h2>
-    <p>
-        Senior Mobile Developer with strong experience in building scalable 
-        Flutter and iOS applications. Skilled in Firebase integration, 
-        REST API development, push notifications, and performance optimization.
-        Passionate about clean architecture and smooth UI/UX experiences.
-    </p>
+<h2>Professional Summary</h2>
+<p>
+Detail-oriented Senior Mobile Developer with 5+ years of experience building scalable,
+high-performance iOS and Flutter applications. Strong expertise in Swift, UIKit,
+Firebase integration, REST API development, and App Store deployment.
+Experienced in migrating legacy Objective-C projects to Swift and collaborating
+with cross-functional teams to deliver user-focused applications.
+</p>
 </section>
 
 <section>
-    <h2>Technical Skills</h2>
-    <div class="skills">
-        <span>Swift</span>
-        <span>CocoaPods</span>
-        <span>Firebase</span>
-        <span>REST API</span>
-        <span>Flutter</span>
-        <span>GitHub</span>
-    </div>
+<h2>Technical Skills</h2>
+<div class="skills">
+<span>Swift</span>
+<span>UIKit</span>
+<span>SwiftUI</span>
+<span>Flutter</span>
+<span>Firebase</span>
+<span>REST API</span>
+<span>CoreData</span>
+<span>Alamofire</span>
+<span>GitHub</span>
+<span>CocoaPods</span>
+<span>GraphQL</span>
+</div>
 </section>
 
 <section>
-    <h2>iOS Projects</h2>
-    <div class="projects">
-        <div class="project-card">
-            <h3>Relief Driver</h3>
-            <p>iOS app built with Swift and REST APIs focused on performance and reliability.</p>
-        </div>
+<h2>Live Applications</h2>
+<div class="projects">
 
-        <div class="project-card">
-            <h3>QPark</h3>
-            <p>Smart parking solution with backend integration and real-time updates.</p>
-        </div>
+<div class="card">
+<h3>Relief Driver</h3>
+<p>
+On-demand booking platform connecting Owner Drivers with Relief Drivers.
+</p>
+<ul>
+<li>Eliminates booking hassles</li>
+<li>Real-time driver availability</li>
+<li>Industry-focused workflow optimization</li>
+</ul>
+<a href="https://apps.apple.com/au/app/relief-driver/id1615576606" target="_blank" class="btn">View on App Store</a>
+</div>
 
-        <div class="project-card">
-            <h3>Tradie Tracer</h3>
-            <p>Service tracking application with Firebase and push notification support.</p>
-        </div>
-    </div>
+<div class="card">
+<h3>Life Of Me</h3>
+<p>
+End-of-life planning application helping users secure and document future wishes.
+</p>
+<ul>
+<li>Legal & financial planning support</li>
+<li>Secure data management</li>
+<li>User-friendly structured workflow</li>
+</ul>
+<a href="https://apps.apple.com/au/app/life-of-me/id6749895661" target="_blank" class="btn">View on App Store</a>
+</div>
+
+<div class="card">
+<h3>SRSR (Start Running Stay Running)</h3>
+<p>
+Complete athlete performance and training management platform.
+</p>
+<ul>
+<li>Program purchase & tracking</li>
+<li>Session scheduling & reminders</li>
+<li>Parent dashboard & QR attendance</li>
+<li>Performance analytics & insights</li>
+</ul>
+<a href="https://apps.apple.com/au/app/start-running-stay-running/id6752651225" target="_blank" class="btn">View on App Store</a>
+</div>
+
+</div>
 </section>
 
 <section>
-    <h2>Flutter Projects</h2>
-    <div class="projects">
-        <div class="project-card">
-            <h3>MateInvest</h3>
-            <p>Investment management mobile app with clean UI and API integrations.</p>
-        </div>
+<h2>Professional Project Experience</h2>
 
-        <div class="project-card">
-            <h3>LifeOfMe</h3>
-            <p>Personal growth and activity tracking application using Flutter & Firebase.</p>
-        </div>
-    </div>
+<div style="margin-bottom:30px;">
+<h3 style="margin-bottom:10px; color:#60a5fa;">iOS Applications</h3>
+<p>
+Relief Driver, Tradie Tracer, QPark, Propare, Eazy Employment, 
+TextPlay, Reading KM's, Entheos, BeFreeGym
+</p>
+</div>
+
+<div>
+<h3 style="margin-bottom:10px; color:#60a5fa;">Flutter Applications</h3>
+<p>
+Life Of Me, SRSR (Start Running Stay Running), 
+MatesInvest, Portea, Boup
+</p>
+</div>
+
+</section>
+
+<section>
+<h2>Work Experience</h2>
+<div class="timeline">
+<div>
+<strong>2024 – Present | Trilokn Pvt Ltd</strong><br>
+iOS / Flutter Developer – Migrated legacy Objective-C to Swift,
+integrated Firebase & third-party SDKs.
+</div>
+
+<div>
+<strong>2022 – 2024 | Appgurus</strong><br>
+iOS & Flutter Developer – Performance optimization and QA collaboration.
+</div>
+
+<div>
+<strong>2021 – 2022 | I-Verve Pvt Ltd</strong><br>
+Jr. iOS Developer – App maintenance and debugging.
+</div>
+
+<div>
+<strong>2020 – 2021 | SilverSky Technology</strong><br>
+Jr. iOS Developer – Assisted in feature development and Agile sprint delivery.
+</div>
+</div>
 </section>
 
 <footer>
-    © 2026 Nirmal Ahir | Senior Mobile Developer
+© 2026 Nirmal Ahir | Senior Mobile Application Developer
 </footer>
 
 <script>
-// Scroll animation
-const cards = document.querySelectorAll('.project-card');
-
-window.addEventListener('scroll', () => {
-    const triggerBottom = window.innerHeight * 0.85;
-
-    cards.forEach(card => {
-        const cardTop = card.getBoundingClientRect().top;
-
-        if(cardTop < triggerBottom){
-            card.classList.add('show');
-        }
-    });
+const cards=document.querySelectorAll('.card');
+window.addEventListener('scroll',()=>{
+const trigger=window.innerHeight*0.85;
+cards.forEach(card=>{
+if(card.getBoundingClientRect().top<trigger){
+card.classList.add('show');
+}
+});
 });
 </script>
 
